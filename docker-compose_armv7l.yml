@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  proglove:
+    container_name: proglove
+    build:
+      context: ./
+      dockerfile: Dockerfile_armv7l
+#    ports:
+#      - "5000:5000"
+    devices:
+      - "/dev/ttyACM0:/dev/ttyACM0"
+    restart: always
+    volumes:
+      - $VOLUME_DIR/proglove:/usr/src/app/conf
+
+  proglove_nginx:
+    container_name: proglove_nginx
+    image: nginx:1.15.5
+    depends_on:
+      - proglove
+    ports:
+      - 5000:5000
+    restart: always
+    volumes:
+      - $VOLUME_DIR/proglove_nginx:/etc/nginx/

@@ -1,0 +1,27 @@
+general:
+  logging_level: DEBUG
+
+modules:
+#  opcua_server: False
+  proglove: True
+  webserver: True
+
+#opcua_server:
+#  ip_address: 0.0.0.0
+#  port: 4840
+
+webserver:
+  hostname: 0.0.0.0
+  port: 5000
+  name: Proglove Webservice
+  debug: False
+
+con_container:
+  hostname: 192.168.1.171
+  port: 4840
+
+# aktueller Raspi-port
+# für Windows: COM3
+proglove:
+  com_port: /dev/ttyACM0
+# com_port: /dev/serial/by-id/ID_DES_GERÄTES
