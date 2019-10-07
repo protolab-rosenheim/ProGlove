@@ -1,3 +1,10 @@
+# ProGlove
+
+## Mitwirkende
+
+- [Josef Baudisch](https://github.com/orgs/protolab-rosenheim/people/joe-baudisch)
+- [Michael List](https://github.com/orgs/protolab-rosenheim/people/Michael-List)
+
 ## Installationshinweise für einen Raspi mit HypriotOS 
 
 ##### Voraussetzungen:
